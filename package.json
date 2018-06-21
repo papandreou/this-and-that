@@ -24,5 +24,9 @@
     "coverage": "NODE_ENV=test nyc --reporter=lcov --reporter=text --all -- mocha --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "build": "rm -fr build && node build.js",
     "prepublishOnly": "npm run build"
-  }
+  },
+  "files": [
+    "index.js",
+    "build"
+  ]
 }
