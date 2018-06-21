@@ -20,7 +20,7 @@ Returns a string with the formatted list items.
 
 ## Examples
 
-```
+```js
 const thisAndThat = require('this-and-that');
 
 // Default list format in American English:
@@ -32,10 +32,10 @@ console.log(thisAndThat(['foo', 'bar', 'quux'], 'en-US', 'or'));
 // foo, bar, or quux
 
 // The "default" format in Arabic:
-console.log(thisAndThat(['foo', 'bar', 'quux'], 'ar'))
+console.log(thisAndThat(['foo', 'bar', 'quux'], 'ar'));
 // foo، bar، وquux
 
 // The "unitShort" format in Arabic:
-console.log(thisAndThat(['foo', 'bar', 'quux'], 'ar', 'unitShort'))
+console.log(thisAndThat(['foo', 'bar', 'quux'], 'ar', 'unitShort'));
 // foo، وbar، وquux
 ```
