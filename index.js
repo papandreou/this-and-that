@@ -1,4 +1,4 @@
-const buckets = require('./buckets.json');
+const buckets = require('./build/buckets.json');
 const data = {};
 
 const bucketNameByLocaleId = {};
@@ -12,7 +12,7 @@ function findBucket(localeId) {
   const bucketName = bucketNameByLocaleId[localeId];
   if (bucketName) {
     return (data[bucketName] =
-      data[bucketName] || require(`./${bucketName}.json`));
+      data[bucketName] || require(`./build/${bucketName}.json`));
   }
 }
 

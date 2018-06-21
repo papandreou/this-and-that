@@ -10,6 +10,7 @@
     "eslint": "^4.19.1",
     "eslint-config-pretty-standard": "^1.4.1",
     "eslint-plugin-prettier": "^2.6.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
     "prettier": "^1.13.5",
@@ -21,7 +22,7 @@
     "travis": "npm run coverage && npm run lint",
     "docs": "jsdoc -c jsdoc.json",
     "coverage": "NODE_ENV=test nyc --reporter=lcov --reporter=text --all -- mocha --reporter dot && echo google-chrome coverage/lcov-report/index.html",
-    "build": "node build.js",
+    "build": "rm -fr build && node build.js",
     "prepublishOnly": "npm run build"
   }
 }
