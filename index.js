@@ -57,7 +57,7 @@ function renderPattern(pattern, placeholderValues) {
 /**
  * Render a list of items as dictated by the locale. The formats
  * are extracted from CLDR (<a
- * href='http://cldr.unicode.org/development/design-proposals/list-formatting'>see
+ * href='http://cldr.unicode.org/development/development-process/design-proposals/list-formatting'>see
  * some examples</a>).
  *
  * Example invocation:
