@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD",
+  "repository": "git://github.com/papandreou/this-and-that.git",
   "devDependencies": {
     "cldr": "^4.10.0",
     "eslint": "^4.19.1",
