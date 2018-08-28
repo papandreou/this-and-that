@@ -1,6 +1,6 @@
 {
   "name": "this-and-that",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Use the list patterns from CLDR for rendering lists of items in a locale-specific format",
   "main": "index.js",
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
