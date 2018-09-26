@@ -1,6 +1,8 @@
 # this-and-that
 
-Render a list of items as dictated by the locale. The formats are extracted from [the CLDR](http://cldr.unicode.org/development/development-process/design-proposals/list-formatting).
+Render a list of items as dictated by the locale. The formats are extracted from
+[the
+CLDR](http://cldr.unicode.org/development/development-process/design-proposals/list-formatting).
 
 ## Installation
 
@@ -14,7 +16,8 @@ npm install this-and-that
 thisAndThat(itemsArray, localeId = 'en-US', format = 'default')
 ```
 
-The `format` parameter can be either `default`, `or`, `standardShort`, `unit`, `unitNarrow`, or `unitShort`.
+The `format` parameter can be either `default`, `or`, `standardShort`, `unit`,
+`unitNarrow`, or `unitShort`.
 
 Returns a string with the formatted list items.
 
