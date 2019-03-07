@@ -12,7 +12,7 @@ npm install this-and-that
 
 ## Syntax
 
-```
+```js
 thisAndThat(itemsArray, localeId = 'en-US', format = 'default')
 ```
 
