@@ -19,15 +19,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should render a list in Danish', function() {
-    expect(
-      thisAndThat(['foo', 'bar', 'quux'], 'da'),
-      'to equal',
-      'foo, bar og quux'
-    );
-  });
-
-  it('should render a list in Danish', function() {
+  it('should render an "or" list', function() {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], undefined, 'or'),
       'to equal',
