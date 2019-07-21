@@ -24,14 +24,14 @@ const outputDir = pathModule.resolve(__dirname, 'build');
     for (const bucketName of Object.keys(data)) {
       await writeFileAsync(
         pathModule.resolve(outputDir, `${bucketName}.json`),
-        JSON.stringify(data[bucketName], undefined, '  ') + '\n'
+        `${JSON.stringify(data[bucketName], undefined, '  ')}\n`
       );
       buckets[bucketName] = Object.keys(data[bucketName]);
     }
 
     await writeFileAsync(
       pathModule.resolve(outputDir, `buckets.json`),
-      JSON.stringify(buckets, undefined, '  ') + '\n'
+      `${JSON.stringify(buckets, undefined, '  ')}\n`
     );
   } catch (err) {
     console.log(err.stack);
