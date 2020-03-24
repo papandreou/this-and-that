@@ -10,7 +10,7 @@ const outputDir = pathModule.resolve(__dirname, 'build');
   try {
     const data = {
       common: {},
-      rare: {}
+      rare: {},
     };
     for (const localeId of cldr.localeIds) {
       data[commonLocaleIds.has(localeId) ? 'common' : 'rare'][

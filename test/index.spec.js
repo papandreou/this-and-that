@@ -2,8 +2,8 @@ const expect = require('unexpected');
 
 const thisAndThat = require('../');
 
-describe('this-and-that', function() {
-  it('should default to English and the "default" list pattern', function() {
+describe('this-and-that', function () {
+  it('should default to English and the "default" list pattern', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux']),
       'to equal',
@@ -11,7 +11,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should render a list in Danish', function() {
+  it('should render a list in Danish', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], 'da'),
       'to equal',
@@ -19,7 +19,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should render an "or" list', function() {
+  it('should render an "or" list', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], undefined, 'or'),
       'to equal',
@@ -27,7 +27,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should support dashes in locale ids', function() {
+  it('should support dashes in locale ids', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], 'en-US'),
       'to equal',
@@ -35,7 +35,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should strip off locale id suffixes until there is a match', function() {
+  it('should strip off locale id suffixes until there is a match', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], 'en-US-FOO-BAR'),
       'to equal',
@@ -43,7 +43,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should fall back to root if no match is found', function() {
+  it('should fall back to root if no match is found', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], 'foobarquux'),
       'to equal',
@@ -51,7 +51,7 @@ describe('this-and-that', function() {
     );
   });
 
-  it('should support an "uncommon" locale id', function() {
+  it('should support an "uncommon" locale id', function () {
     expect(
       thisAndThat(['foo', 'bar', 'quux'], 'cy'),
       'to equal',
