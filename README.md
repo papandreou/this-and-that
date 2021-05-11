@@ -13,7 +13,7 @@ npm install this-and-that
 ## Syntax
 
 ```js
-thisAndThat(itemsArray, localeId = 'en-US', format = 'default')
+thisAndThat(itemsArray, (localeId = 'en-US'), (format = 'default'));
 ```
 
 The `format` parameter can be either `default`, `or`, `standardShort`, `unit`,

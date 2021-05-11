@@ -13,9 +13,8 @@ const outputDir = pathModule.resolve(__dirname, 'build');
       rare: {},
     };
     for (const localeId of cldr.localeIds) {
-      data[commonLocaleIds.has(localeId) ? 'common' : 'rare'][
-        localeId
-      ] = cldr.extractListPatterns(localeId);
+      data[commonLocaleIds.has(localeId) ? 'common' : 'rare'][localeId] =
+        cldr.extractListPatterns(localeId);
     }
 
     await mkdirp(outputDir);
