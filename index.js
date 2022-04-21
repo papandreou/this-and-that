@@ -70,7 +70,7 @@ function renderPattern(pattern, placeholderValues) {
  */
 function thisAndThat(list, localeId = 'en_us', type = 'default') {
   type = type || 'default';
-  var patterns = findDataForLocale(localeId)[type];
+  const patterns = findDataForLocale(localeId)[type];
   switch (list.length) {
     case 0:
       return '';
@@ -81,15 +81,16 @@ function thisAndThat(list, localeId = 'en_us', type = 'default') {
         return renderPattern(patterns['2'], list);
       }
     /* falls through */
-    default:
-      var str = renderPattern(patterns.end || '{0}, {1}', list.slice(-2));
-      for (var i = list.length - 3; i >= 0; i -= 1) {
+    default: {
+      let str = renderPattern(patterns.end || '{0}, {1}', list.slice(-2));
+      for (let i = list.length - 3; i >= 0; i -= 1) {
         str = renderPattern(
           (!i && patterns.start) || patterns.middle || '{0}, {1}',
           [list[i], str]
         );
       }
       return str;
+    }
   }
 }
 
